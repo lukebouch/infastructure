@@ -1,0 +1,15 @@
+version: '3.0'
+
+services:
+  wallos:
+    container_name: wallos
+    image: bellamy/wallos:latest
+    ports:
+      - '8282:80/tcp'
+    environment:
+      TZ: 'America/New_York'
+    # Volumes store your data between container upgrades
+    volumes:
+      - '/mnt/data/wallos/db:/var/www/html/db'
+      - '/mnt/data/wallos/logos:/var/www/html/images/uploads/logos'
+    restart: unless-stopped
