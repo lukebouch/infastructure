@@ -14,4 +14,4 @@ services:
       ND_BASEURL: ''
     volumes:
       - '/mnt/data/navidrome/data:/data'
-      - '/mnt/data/navidrome/music:/music:ro'
+      - '/mnt/data/music:/music:ro'
