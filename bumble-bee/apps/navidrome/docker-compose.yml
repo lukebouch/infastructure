@@ -13,5 +13,5 @@ services:
             ND_SESSIONTIMEOUT: 24h
             ND_BASEURL: ''
         volumes:
-            - '~/apps/navidrome:/data'
-            - '~/music:/music:ro'
+            - '/home/lbouch/apps/navidrome:/data'
+            - '/home/lbouch/music:/music:ro'
