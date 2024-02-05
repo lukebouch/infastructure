@@ -1,0 +1,15 @@
+{
+	acme_dns cloudflare UeUvLN3faSWLZxbIzBvR9XaPeOZXhN1ldVnDa1Bz
+}
+
+bumble-bee.lukebouch.com {
+	respond "Hello, world!"
+}
+
+blueiris.lukebouch.com {
+	reverse_proxy 192.168.88.60:81
+}
+
+music.lukebouch.com {
+	reverse_proxy kale.lukebouch.com:4533
+}
