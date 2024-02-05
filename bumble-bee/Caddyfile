@@ -13,3 +13,7 @@ blueiris.lukebouch.com {
 music.lukebouch.com {
 	reverse_proxy localhost:4533
 }
+
+budget.lukebouch.com {
+    reverse_proxy localhost:5006
+}
