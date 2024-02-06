@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+    db:
+        image: mariadb:10
+        command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+        environment:
+            MYSQL_ROOT_PASSWORD: F2u2Ns2i8qXpP5m7p82pcz2p79ZXUJ
+            MYSQL_USER: vikunja
+            MYSQL_PASSWORD: JtZfv5o75xgnqRZWvMvYuBkQqxRRoK
+            MYSQL_DATABASE: vikunja
+        volumes:
+            - /home/lbouch/apps/vikunja/db:/var/lib/mysql
+        restart: unless-stopped
+    api:
+        image: vikunja/api
+        environment:
+            VIKUNJA_DATABASE_HOST: db
+            VIKUNJA_DATABASE_PASSWORD: JtZfv5o75xgnqRZWvMvYuBkQqxRRoK
+            VIKUNJA_DATABASE_TYPE: mysql
+            VIKUNJA_DATABASE_USER: vikunja
+            VIKUNJA_DATABASE_DATABASE: vikunja
+            VIKUNJA_SERVICE_JWTSECRET: X4jZs75H3Q86TVNnrdspZxTgstxGX3vCUKv2ZLEnca7Z8z2TXdGnBdyrq4yMeh2gz6jux5JAvM
+            VIKUNJA_SERVICE_FRONTENDURL: https://todo.lukebouch.com/
+        ports:
+            - 3480:3456
+        volumes:
+            - /home/lbouch/apps/vikunja/files:/app/vikunja/files
+        depends_on:
+            - db
+        restart: unless-stopped
+    frontend:
+        image: vikunja/frontend
+        ports:
+            - 3580:80
+        environment:
+            VIKUNJA_API_URL: https://api.todo.lukebouch.com/api/v1
+        restart: unless-stopped

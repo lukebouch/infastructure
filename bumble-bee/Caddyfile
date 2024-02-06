@@ -17,3 +17,11 @@ music.lukebouch.com {
 budget.lukebouch.com {
     reverse_proxy localhost:5006
 }
+
+todo.lukebouch.com {
+    reverse_proxy localhost:3580
+}
+
+api.todo.lukebouch.com {
+    reverse_proxy localhost:3480
+}
