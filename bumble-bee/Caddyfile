@@ -1,5 +1,5 @@
 {
-	acme_dns cloudflare UeUvLN3faSWLZxbIzBvR9XaPeOZXhN1ldVnDa1Bz
+	acme_dns cloudflare {$CLOUDFLARE_API_TOKEN}
 }
 
 bumble-bee.lukebouch.com {
