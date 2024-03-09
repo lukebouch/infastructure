@@ -25,3 +25,7 @@ todo.lukebouch.com {
 api.todo.lukebouch.com {
     reverse_proxy localhost:3480
 }
+
+subscriptions.lukebouch.com {
+    reverse_proxy localhost:8500
+}
