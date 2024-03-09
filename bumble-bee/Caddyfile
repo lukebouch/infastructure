@@ -27,5 +27,5 @@ api.todo.lukebouch.com {
 }
 
 subscriptions.lukebouch.com {
-    reverse_proxy localhost:8500
+    reverse_proxy localhost:8282
 }
