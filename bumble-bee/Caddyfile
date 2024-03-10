@@ -33,3 +33,7 @@ subscriptions.lukebouch.com {
 photos.lukebouch.com {
     reverse_proxy localhost:2283
 }
+
+syncthing.bumble-bee.lukebouch.com {
+    reverse_proxy localhost:8384
+}
