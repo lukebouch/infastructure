@@ -12,7 +12,7 @@ services:
     timetagger:
         image: ghcr.io/almarklein/timetagger:v23.9.2-nonroot
         ports:
-            - '80:80'
+            - '8310:80'
         volumes:
             - /home/lbouch/apps/timetagger:/opt/_timetagger
         environment:

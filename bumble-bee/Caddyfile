@@ -37,3 +37,7 @@ photos.lukebouch.com {
 syncthing.bumble-bee.lukebouch.com {
     reverse_proxy localhost:8384
 }
+
+time.lukebouch.com {
+    reverse_proxy localhost:8310
+}
