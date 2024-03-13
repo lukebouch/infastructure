@@ -38,6 +38,11 @@ syncthing.bumble-bee.lukebouch.com {
     reverse_proxy localhost:8384
 }
 
+<<<<<<< HEAD
 backups.bumble-bee.lukebouch.com {
     reverse_proxy http://localhost:9898
+=======
+time.lukebouch.com {
+    reverse_proxy localhost:8310
+>>>>>>> refs/remotes/origin/main
 }
