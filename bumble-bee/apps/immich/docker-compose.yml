@@ -87,7 +87,7 @@ services:
             SCHEDULE: '@daily'
             BACKUP_DIR: /db_dumps
         volumes:
-            - ./db_dumps:/db_dumps
+            - /media/data/backups/immich/db_dumps:/db_dumps
         depends_on:
             - database
 
