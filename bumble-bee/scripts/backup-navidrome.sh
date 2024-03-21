@@ -10,7 +10,7 @@ sudo docker compose down
 cd /home/lbouch/apps/navidrome
 
 echo "Backing up Navidrome..."
-duplicity backup --no-encryption . "${b2_url}/apps/navidrome"
+duplicity backup --no-encryption . --exclude cache "${b2_url}/apps/navidrome"
 
 # Start up the app
 echo "Starting the Navidrome app back up..."
