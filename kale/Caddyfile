@@ -3,5 +3,5 @@
 }
 
 kale.lukebouch.com {
-    respond "Hello world!"
+	respond "Hello, world!"
 }
