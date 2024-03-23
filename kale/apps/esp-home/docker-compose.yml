@@ -1,0 +1,14 @@
+version: '3'
+services:
+    esphome:
+        container_name: esphome
+        image: ghcr.io/esphome/esphome
+        volumes:
+            - /home/lbouch/apps/esphome/config:/config
+            - /etc/localtime:/etc/localtime:ro
+        restart: always
+        privileged: true
+        network_mode: host
+        environment:
+            - USERNAME=lbouch
+            - PASSWORD=n6k#Smj9ltO;*.$[]Lyj|5c/|3cFx^
