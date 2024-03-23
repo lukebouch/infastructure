@@ -2,11 +2,14 @@ version: '3'
 services:
     homeassistant:
         container_name: homeassistant
+        user: '1000'
         image: 'ghcr.io/home-assistant/home-assistant:stable'
         volumes:
             - /home/lbouch/apps/home-assistant/config:/config
             - /etc/localtime:/etc/localtime:ro
             # - /run/dbus:/run/dbus:ro
+        devices:
+            - /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20230601140318-if00:/dev/zigbee
         restart: unless-stopped
         privileged: true
         network_mode: host
