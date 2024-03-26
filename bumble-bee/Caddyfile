@@ -45,3 +45,7 @@ backups.bumble-bee.lukebouch.com {
 time.lukebouch.com {
     reverse_proxy http://localhost:8310
 }
+
+food.lukebouch.com {
+    reverse_proxy http://localhost:9283
+}
