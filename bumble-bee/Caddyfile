@@ -46,6 +46,6 @@ time.lukebouch.com {
     reverse_proxy http://localhost:8310
 }
 
-food.lukebouch.com {
+inventory.lukebouch.com {
     reverse_proxy http://localhost:9283
 }
