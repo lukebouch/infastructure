@@ -6,6 +6,6 @@ cameras:
     enabled: true
     ffmpeg:
       inputs:
-        - path: rtsp://admin:abc12345678@192.168.88.61:554/cam/realmonitor?channel=1&subtype=1
+        - path: rtsp://admin:abc12345678@192.168.88.61:554/cam/realmonitor?channel=1&subtype=0
           roles:
             - detect
