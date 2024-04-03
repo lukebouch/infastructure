@@ -5,6 +5,9 @@ birdseye:
   enabled: True
   mode: continuous
 
+detect:
+  enabled: false
+
 cameras:
   driveway:
     enabled: true
