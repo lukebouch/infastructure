@@ -7,5 +7,5 @@ kale.lukebouch.com {
 }
 
 frigate.lukebouch.com {
-    proxy http://localhost:5000
+    reverse_proxy http://localhost:5000
 }
