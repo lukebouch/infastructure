@@ -5,3 +5,7 @@
 kale.lukebouch.com {
 	respond "Hello, world!"
 }
+
+frigate.lukebouch.com {
+    proxy http://localhost:5000
+}
