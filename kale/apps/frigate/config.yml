@@ -3,6 +3,9 @@ mqtt:
   host: mqtt.lukebouch.com
   port: 1883
 
+ffmpeg:
+  hwaccel_args: preset-vaapi
+
 birdseye:
   enabled: true
   mode: continuous
