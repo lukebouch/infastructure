@@ -1,8 +1,10 @@
 mqtt:
-  enabled: False
+  enabled: true
+  host: localhost
+  port: 1883
 
 birdseye:
-  enabled: True
+  enabled: true
   mode: continuous
 
 detectors:
@@ -13,16 +15,6 @@ detectors:
 detect:
   enabled: false
 
-record:
-  enabled: True
-  retain:
-    days: 0
-    mode: all
-  events:
-    retain:
-      default: 30
-      mode: motion
-
 cameras:
   driveway:
     enabled: true
@@ -32,12 +24,15 @@ cameras:
       height: 480
     ffmpeg:
       inputs:
-        - path: rtsp://admin:abc12345678@192.168.88.61:554/cam/realmonitor?channel=1&subtype=0
-          roles:
-            - record
-        - path: rtsp://admin:abc12345678@192.168.88.61:554/cam/realmonitor?channel=1&subtype=1
-          roles:
-            - detect
+      - path: rtsp://admin:abc12345678@192.168.88.61:554/cam/realmonitor?channel=1&subtype=0
+        roles:
+        - record
+      - path: rtsp://admin:abc12345678@192.168.88.61:554/cam/realmonitor?channel=1&subtype=1
+        roles:
+        - detect
+    motion:
+      mask:
+      - 435,0,640,0,640,54,434,52
   driveway_2:
     enabled: true
     detect:
@@ -46,12 +41,15 @@ cameras:
       height: 480
     ffmpeg:
       inputs:
-        - path: rtsp://admin:abc12345678@192.168.88.63:554/cam/realmonitor?channel=1&subtype=0
-          roles:
-            - record
-        - path: rtsp://admin:abc12345678@192.168.88.63:554/cam/realmonitor?channel=1&subtype=1
-          roles:
-            - detect
+      - path: rtsp://admin:abc12345678@192.168.88.63:554/cam/realmonitor?channel=1&subtype=0
+        roles:
+        - record
+      - path: rtsp://admin:abc12345678@192.168.88.63:554/cam/realmonitor?channel=1&subtype=1
+        roles:
+        - detect
+    motion:
+      mask:
+      - 435,0,640,0,640,54,434,52
   front_yard:
     enabled: true
     detect:
@@ -60,9 +58,12 @@ cameras:
       height: 480
     ffmpeg:
       inputs:
-        - path: rtsp://admin:abc12345678@192.168.88.62:554/cam/realmonitor?channel=1&subtype=0
-          roles:
-            - record
-        - path: rtsp://admin:abc12345678@192.168.88.62:554/cam/realmonitor?channel=1&subtype=1
-          roles:
-            - detect
+      - path: rtsp://admin:abc12345678@192.168.88.62:554/cam/realmonitor?channel=1&subtype=0
+        roles:
+        - record
+      - path: rtsp://admin:abc12345678@192.168.88.62:554/cam/realmonitor?channel=1&subtype=1
+        roles:
+        - detect
+    motion:
+      mask:
+      - 435,0,640,0,640,54,434,52
