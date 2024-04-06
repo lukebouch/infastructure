@@ -5,6 +5,11 @@ birdseye:
   enabled: True
   mode: continuous
 
+detectors:
+  coral:
+    type: edgetpu
+    device: usb
+
 detect:
   enabled: false
 
