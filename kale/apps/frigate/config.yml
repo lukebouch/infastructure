@@ -84,6 +84,9 @@ cameras:
       - path: rtsp://admin:abc12345678@192.168.88.64:554/cam/realmonitor?channel=1&subtype=1
         roles:
         - detect
+    motion:
+      mask:
+        - 640,0,640,53,441,52,441,0
   front_yard_2:
     enabled: true
     detect:
