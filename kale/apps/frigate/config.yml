@@ -18,6 +18,16 @@ detectors:
 detect:
   enabled: false
 
+objects:
+  track:
+    - person
+    - car
+    - motorcycle
+    - bicycle
+    - dog
+    - cat
+    - bear
+
 cameras:
   driveway:
     enabled: true
