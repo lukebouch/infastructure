@@ -1,6 +1,6 @@
 mqtt:
   enabled: true
-  host: localhost
+  host: mqtt.lukebouch.com
   port: 1883
 
 birdseye:
