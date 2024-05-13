@@ -10,7 +10,7 @@ sudo docker compose down
 # Backup
 echo "Backing up TimeTagger..."
 cd /home/lbouch/apps/timetagger
-duplicity backup --no-encryption . "${b2_url}/apps/timetagger"
+duplicity backup --full-if-older-than 1W --no-encryption . "${b2_url}/apps/timetagger"
 
 # Start up the app
 echo "Starting the TimeTagger app back up..."
