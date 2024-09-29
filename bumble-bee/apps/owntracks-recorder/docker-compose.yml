@@ -6,13 +6,10 @@ services:
         ports:
             - 8083:8083
         volumes:
-            - /home/lbouch/apps/owntracks-recorder/config:/config
             - /home/lbouch/apps/owntracks-recorder/store:/store
         restart: unless-stopped
-        environment:
-            'OTR_HOST': 'mqtt.bumble-bee.lukebouch.com'
-            'OTR_USER': 'internal'
-            'OTR_PASS': 'yiS4Rl4LVDY98Te67J9cBcqa4oZLgZ6g'
+        env_file:
+            - .env
     owntracks-frontend:
         image: owntracks/frontend
         ports:
