@@ -53,3 +53,7 @@ inventory.lukebouch.com {
 owntracks.lukebouch.com {
     reverse_proxy http://localhost:8083
 }
+
+owntracks2.lukebouch.com {
+    reverse_proxy http://localhost:8183
+}

@@ -11,3 +11,11 @@ services:
         restart: unless-stopped
         environment:
             'OTR_HOST': 'bumble-bee.lukebouch.com'
+    owntracks-frontend:
+        image: owntracks/frontend
+        ports:
+            - 8183:80
+        environment:
+            - SERVER_HOST=otrecorder
+            - SERVER_PORT=8083
+        restart: unless-stopped
