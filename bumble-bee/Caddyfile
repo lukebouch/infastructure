@@ -49,3 +49,7 @@ time.lukebouch.com {
 inventory.lukebouch.com {
     reverse_proxy http://localhost:9283
 }
+
+owntracks.lukebouch.com {
+    reverse_proxy http://localhost:8083
+}

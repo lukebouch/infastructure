@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    otrecorder:
+        image: owntracks/recorder
+        ports:
+            - 8083:8083
+        volumes:
+            - /home/lbouch/apps/owntracks-recorder/config:/config
+            - /home/lbouch/apps/owntracks-recorder/store:/store
+        restart: unless-stopped
+        environment:
+            'OTR_HOST': 'bumble-bee.lukebouch.com'
