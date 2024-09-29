@@ -11,6 +11,8 @@ services:
         restart: unless-stopped
         environment:
             'OTR_HOST': 'bumble-bee.lukebouch.com'
+            'OTR_USER': 'internal'
+            'OTR_PASS': 'yiS4Rl4LVDY98Te67J9cBcqa4oZLgZ6g'
     owntracks-frontend:
         image: owntracks/frontend
         ports:
