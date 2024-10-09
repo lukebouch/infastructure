@@ -1,0 +1,1 @@
+0 6 * * * sh /home/lbouch/infastructure/kale/apps/paperless/backup.sh | ts > /home/lbouch/apps/paperless/logs/export_log.txt
