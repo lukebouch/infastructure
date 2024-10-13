@@ -1,0 +1,7 @@
+0 3 * * * bash /home/lbouch/infastructure/bumble-bee/scripts/backup-notes.sh
+0 3 * * * bash /home/lbouch/infastructure/bumble-bee/scripts/backup-financial.sh
+0 3 * * * bash /home/lbouch/infastructure/bumble-bee/scripts/backup-timetagger.sh
+0 3 * * * bash /home/lbouch/infastructure/bumble-bee/scripts/backup-navidrome.sh
+0 4 * * * bash /home/lbouch/infastructure/bumble-bee/scripts/backup-immich.sh
+0 3 * * * bash /home/lbouch/infastructure/bumble-bee/scripts/backup-actual-budget.sh
+0 3 * * * bash /home/lbouch/infastructure/bumble-bee/scripts/backup-grocy.sh
