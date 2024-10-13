@@ -22,3 +22,5 @@ sudo docker compose exec backup ./backup.sh
 echo "Backing up lastest database dump..."
 cd /media/data/backups/immich/db_dumps/last
 duplicity backup --no-encryption immich-latest.sql.gz "${b2_url}/apps/immich/database"
+
+curl https://healthchecks.lukebouch.com/ping/4bd6c7fb-58d8-4cd9-9a64-e0a597f7438f
