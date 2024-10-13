@@ -61,3 +61,7 @@ owntracks2.lukebouch.com {
 healthchecks.lukebouch.com {
     reverse_proxy http://localhost:8500
 }
+
+dozzle.lukebouch.com {
+    reverse_proxy http://localhost:8600
+}
