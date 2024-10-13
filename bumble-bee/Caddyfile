@@ -57,3 +57,7 @@ owntracks.lukebouch.com {
 owntracks2.lukebouch.com {
     reverse_proxy http://localhost:8183
 }
+
+healthchecks.lukebouch.com {
+    reverse_proxy http://localhost:8500
+}
