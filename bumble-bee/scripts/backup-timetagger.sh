@@ -16,3 +16,6 @@ duplicity backup --full-if-older-than 1W --no-encryption . "${b2_url}/apps/timet
 echo "Starting the TimeTagger app back up..."
 cd /home/lbouch/infastructure/bumble-bee/apps/timetagger
 sudo docker compose up -d
+
+# Ping health check
+curl https://healthchecks.lukebouch.com/ping/807c6e89-ae9c-403d-be61-2d194dd94f96

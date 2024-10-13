@@ -16,3 +16,6 @@ duplicity backup --no-encryption . --exclude ./cache "${b2_url}/apps/navidrome"
 echo "Starting the Navidrome app back up..."
 cd /home/lbouch/infastructure/bumble-bee/apps/navidrome
 sudo docker compose up -d
+
+# Ping health check
+curl https://healthchecks.lukebouch.com/ping/74fd2296-3f39-4c8a-82bc-3a2ad4bba87c
