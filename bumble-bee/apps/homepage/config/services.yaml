@@ -1,0 +1,24 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- General:
+  - Immich:
+      widget:
+        type: immich
+        url: https://photos.lukebouch.com
+        key: EZZe5BfbBUdA5eaphHCRGIZUHT3tt1og4fXkAd38s
+  - MinecraftServer:
+      widget:
+        type: minecraft
+        url: udp://mc.lukebouch.com:25565
+
+- BumbleBee:
+  - Dozzle:
+      href: https://dozzle.bumble-bee.lukebouch.com
+  - HealthChecks:
+      widget:
+        type: healthchecks
+        url: https://healthchecks.lukebouch.com
+        key: KQ5IXqgvEp3MuRspXqmvINz_rFcY0QRT
+        # uuid: <CHECK_UUID> # optional, if not included total statistics for all checks is shown
