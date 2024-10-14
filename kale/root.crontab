@@ -1,3 +1,4 @@
 0 6 * * * sh /home/lbouch/infastructure/kale/apps/paperless/backup.sh | ts > /home/lbouch/apps/paperless/logs/backup_log.txt
+0 3 * * * sh /home/lbouch/infastructure/kale/scripts/backup-onedrive.sh
 * * * * * sh /home/lbouch/infastructure/kale/apps/paperless/import-from-onedrive.sh | ts > /home/lbouch/apps/paperless/logs/onedrive_import_log.txt
 10 6 * * * sh /home/lbouch/infastructure/kale/apps/immich/backup.sh | ts > /home/lbouch/apps/immich/logs/backup_log.txt
