@@ -1,0 +1,12 @@
+version: '3'
+services:
+    openwebrx:
+        image: jketterl/openwebrx:stable
+        volumes:
+            - /home/lbouch/apps/open-web-rx/settings:/var/lib/openwebrx
+        ports:
+            - 8073:8073
+        devices:
+            - /dev/bus/usb/001/004:/dev/bus/usb/002/002
+        tmpfs:
+            - /tmp/openwebrx
