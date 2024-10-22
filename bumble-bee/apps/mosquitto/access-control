@@ -1,0 +1,13 @@
+# Directives here affect anonymous users
+
+# Luke Bouch
+user lukebouch
+topic readwrite #
+
+# Interal - Used by apps running on this server
+user internal
+topic readwrite #
+
+# Great Pumpkin Chase - OwnTracks
+user gpc
+topic write #
